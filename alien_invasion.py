@@ -24,8 +24,13 @@ def run_game():
     #初始化游戏并创建一个屏幕对象
     pygame.init()   #初始化背景设置
     ai_settings = Settings()
-    screen = pygame.display.set_mode((ai_settings.screen_width, ai_settings.screen_height))   #设置窗口大小
-    pygame.display.set_caption("Alien Invasion")
+    screen = pygame.display.set_mode((ai_settings.screen_width, ai_settings.screen_height))
+    """
+    设置窗口大小, 返回surface对象，表示整个游戏窗口
+    
+    
+    """
+    pygame.display.set_caption("Fire Fighter")
 
     #创建游戏按钮
     play_button = Button(ai_settings, screen, "Play")
