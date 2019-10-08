@@ -8,6 +8,7 @@ class Button():
         初始化按钮的属性
         '''
         self.screen = screen
+        #获取Surface的矩形区域
         self.screen_rect = screen.get_rect()
 
         #设置按钮的尺寸和其他属性
